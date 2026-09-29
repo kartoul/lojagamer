@@ -3,12 +3,9 @@ import { Link } from "react-router-dom"
 const Header = () => {
   return (
     <header className="flex justify-between items-center py-6 px-[5%] bg-[#181818]">
-      <h1 className="logo p-2 text-[2rem] text-green-50 font-bold transition-all">LOJA <span className="text-[#95ff00] p-1">GAMER</span></h1>
+      <Link to="/" className="logo p-2 text-[2rem] text-green-50 font-bold transition-all">LOJA <span className="text-[#95ff00] p-1">GAMER</span></Link>
       <nav>
         <ul className="flex list-none items-center gap-8">
-            <li>
-                <Link to="/" className="text-green-50 text-lg no-underline hover:text-[#95ff00] hover:font-medium transition-all">Home</Link>
-            </li>
             <li>
                 <Link to="/jogos" className="text-green-50 text-lg no-underline hover:text-[#95ff00] hover:font-medium transition-all">Jogos</Link>
             </li>
